@@ -1,7 +1,17 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31613.86
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TDDMicroExercises", "TDDMicroExercises.csproj", "{BBCF3C67-8E31-48E3-AD2E-8C605E2E07BE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TDDMicroExercises.TelemetrySystem.Tests", "TDDMicroExercises.TelemetrySystem.Tests\TDDMicroExercises.TelemetrySystem.Tests.csproj", "{04E3D83D-AA16-4F27-B471-656F902B0412}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TDDMicroExercises.TirePressureMonitoringSystem.Tests", "TDDMicroExercises.TirePressureMonitoringSystem.Tests\TDDMicroExercises.TirePressureMonitoringSystem.Tests.csproj", "{1E6B1618-1007-4AC7-B477-3906E38345E4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TDDMicroExercises.TurnTicketDispenser.Tests", "TDDMicroExercises.TurnTicketDispenser.Tests\TDDMicroExercises.TurnTicketDispenser.Tests.csproj", "{2F49A520-8B8D-49A9-B131-DBA36D70105B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TDDMicroExercises.UnicodeFileToHtmlTextConverter.Tests", "TDDMicroExercises.UnicodeFileToHtmlTextConverter.Tests\TDDMicroExercises.UnicodeFileToHtmlTextConverter.Tests.csproj", "{F9713567-DDAC-4F14-8158-7108BD45040D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,8 +23,27 @@ Global
 		{BBCF3C67-8E31-48E3-AD2E-8C605E2E07BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BBCF3C67-8E31-48E3-AD2E-8C605E2E07BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BBCF3C67-8E31-48E3-AD2E-8C605E2E07BE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{04E3D83D-AA16-4F27-B471-656F902B0412}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{04E3D83D-AA16-4F27-B471-656F902B0412}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{04E3D83D-AA16-4F27-B471-656F902B0412}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{04E3D83D-AA16-4F27-B471-656F902B0412}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1E6B1618-1007-4AC7-B477-3906E38345E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E6B1618-1007-4AC7-B477-3906E38345E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E6B1618-1007-4AC7-B477-3906E38345E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1E6B1618-1007-4AC7-B477-3906E38345E4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2F49A520-8B8D-49A9-B131-DBA36D70105B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F49A520-8B8D-49A9-B131-DBA36D70105B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F49A520-8B8D-49A9-B131-DBA36D70105B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F49A520-8B8D-49A9-B131-DBA36D70105B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F9713567-DDAC-4F14-8158-7108BD45040D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F9713567-DDAC-4F14-8158-7108BD45040D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F9713567-DDAC-4F14-8158-7108BD45040D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F9713567-DDAC-4F14-8158-7108BD45040D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {62586A50-7B26-4897-AC1A-E9356C46871D}
 	EndGlobalSection
 EndGlobal
