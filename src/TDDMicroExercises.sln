@@ -3,15 +3,29 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31613.86
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TDDMicroExercises", "TDDMicroExercises.csproj", "{BBCF3C67-8E31-48E3-AD2E-8C605E2E07BE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TDDMicroExercises.TelemetrySystem.Tests", "TDDMicroExercises.TelemetrySystem.Tests\TDDMicroExercises.TelemetrySystem.Tests.csproj", "{04E3D83D-AA16-4F27-B471-656F902B0412}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TDDMicroExercises.TelemetrySystem.Tests", "TDDMicroExercises.TelemetrySystem.Tests\TDDMicroExercises.TelemetrySystem.Tests.csproj", "{04E3D83D-AA16-4F27-B471-656F902B0412}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TDDMicroExercises.TirePressureMonitoringSystem.Tests", "TDDMicroExercises.TirePressureMonitoringSystem.Tests\TDDMicroExercises.TirePressureMonitoringSystem.Tests.csproj", "{1E6B1618-1007-4AC7-B477-3906E38345E4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TDDMicroExercises.TirePressureMonitoringSystem.Tests", "TDDMicroExercises.TirePressureMonitoringSystem.Tests\TDDMicroExercises.TirePressureMonitoringSystem.Tests.csproj", "{1E6B1618-1007-4AC7-B477-3906E38345E4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TDDMicroExercises.TurnTicketDispenser.Tests", "TDDMicroExercises.TurnTicketDispenser.Tests\TDDMicroExercises.TurnTicketDispenser.Tests.csproj", "{2F49A520-8B8D-49A9-B131-DBA36D70105B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TDDMicroExercises.TurnTicketDispenser.Tests", "TDDMicroExercises.TurnTicketDispenser.Tests\TDDMicroExercises.TurnTicketDispenser.Tests.csproj", "{2F49A520-8B8D-49A9-B131-DBA36D70105B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TDDMicroExercises.UnicodeFileToHtmlTextConverter.Tests", "TDDMicroExercises.UnicodeFileToHtmlTextConverter.Tests\TDDMicroExercises.UnicodeFileToHtmlTextConverter.Tests.csproj", "{F9713567-DDAC-4F14-8158-7108BD45040D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TDDMicroExercises.UnicodeFileToHtmlTextConverter.Tests", "TDDMicroExercises.UnicodeFileToHtmlTextConverter.Tests\TDDMicroExercises.UnicodeFileToHtmlTextConverter.Tests.csproj", "{F9713567-DDAC-4F14-8158-7108BD45040D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TDDMicroExercises.TirePressureMonitoringSystem", "TDDMicroExercises.TirePressureMonitoringSystem\TDDMicroExercises.TirePressureMonitoringSystem.csproj", "{A2DD77BD-9860-458C-BCE7-136AC2B898CC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TDDMicroExercises.TurnTicketDispenser", "TDDMicroExercises.TurnTicketDispenser\TDDMicroExercises.TurnTicketDispenser.csproj", "{F8727446-5349-4E7C-8161-5D4A19D42DE0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TDDMicroExercises.UnicodeFileToHtmlTextConverter", "TDDMicroExercises.UnicodeFileToHtmlTextConverter\TDDMicroExercises.UnicodeFileToHtmlTextConverter.csproj", "{E852EACA-CB61-409C-8528-5F970244D18B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TDDMicroExercises.TelemetrySystem", "TDDMicroExercises.TelemetrySystem\TDDMicroExercises.TelemetrySystem.csproj", "{03140CD9-AD41-4EB3-8994-7CDFA2A99330}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TDDMicroExercises.TirePressureMonitoringSystem.SomeDependencies", "TDDMicroExercises.TirePressureMonitoringSystem.SomeDependencies\TDDMicroExercises.TirePressureMonitoringSystem.SomeDependencies.csproj", "{1D217DE8-4C46-4E41-9945-BD154BE28EE1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TDDMicroExercises.TurnTicketDispenser.SomeDependencies", "TDDMicroExercises.TurnTicketDispenser.SomeDependencies\TDDMicroExercises.TurnTicketDispenser.SomeDependencies.csproj", "{3C52DA14-DEBD-4630-AED3-8B07D1F476A3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TDDMicroExercises.UnicodeFileToHtmlTextConverter.SomeDependencies", "TDDMicroExercises.UnicodeFileToHtmlTextConverter.SomeDependencies\TDDMicroExercises.UnicodeFileToHtmlTextConverter.SomeDependencies.csproj", "{B8C2A883-B861-4B52-B296-9662AA65EA51}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TDDMicroExercises.TelemetrySystem.SomeDependencies", "TDDMicroExercises.TelemetrySystem.SomeDependencies\TDDMicroExercises.TelemetrySystem.SomeDependencies.csproj", "{592904DD-4BF6-4D9A-BAFD-7E2F1755F39D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,10 +33,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{BBCF3C67-8E31-48E3-AD2E-8C605E2E07BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{BBCF3C67-8E31-48E3-AD2E-8C605E2E07BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{BBCF3C67-8E31-48E3-AD2E-8C605E2E07BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{BBCF3C67-8E31-48E3-AD2E-8C605E2E07BE}.Release|Any CPU.Build.0 = Release|Any CPU
 		{04E3D83D-AA16-4F27-B471-656F902B0412}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{04E3D83D-AA16-4F27-B471-656F902B0412}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{04E3D83D-AA16-4F27-B471-656F902B0412}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -39,6 +49,38 @@ Global
 		{F9713567-DDAC-4F14-8158-7108BD45040D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F9713567-DDAC-4F14-8158-7108BD45040D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F9713567-DDAC-4F14-8158-7108BD45040D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A2DD77BD-9860-458C-BCE7-136AC2B898CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2DD77BD-9860-458C-BCE7-136AC2B898CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A2DD77BD-9860-458C-BCE7-136AC2B898CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A2DD77BD-9860-458C-BCE7-136AC2B898CC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F8727446-5349-4E7C-8161-5D4A19D42DE0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F8727446-5349-4E7C-8161-5D4A19D42DE0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F8727446-5349-4E7C-8161-5D4A19D42DE0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F8727446-5349-4E7C-8161-5D4A19D42DE0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E852EACA-CB61-409C-8528-5F970244D18B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E852EACA-CB61-409C-8528-5F970244D18B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E852EACA-CB61-409C-8528-5F970244D18B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E852EACA-CB61-409C-8528-5F970244D18B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{03140CD9-AD41-4EB3-8994-7CDFA2A99330}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{03140CD9-AD41-4EB3-8994-7CDFA2A99330}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{03140CD9-AD41-4EB3-8994-7CDFA2A99330}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{03140CD9-AD41-4EB3-8994-7CDFA2A99330}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1D217DE8-4C46-4E41-9945-BD154BE28EE1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D217DE8-4C46-4E41-9945-BD154BE28EE1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D217DE8-4C46-4E41-9945-BD154BE28EE1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D217DE8-4C46-4E41-9945-BD154BE28EE1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3C52DA14-DEBD-4630-AED3-8B07D1F476A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C52DA14-DEBD-4630-AED3-8B07D1F476A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C52DA14-DEBD-4630-AED3-8B07D1F476A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C52DA14-DEBD-4630-AED3-8B07D1F476A3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B8C2A883-B861-4B52-B296-9662AA65EA51}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B8C2A883-B861-4B52-B296-9662AA65EA51}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B8C2A883-B861-4B52-B296-9662AA65EA51}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B8C2A883-B861-4B52-B296-9662AA65EA51}.Release|Any CPU.Build.0 = Release|Any CPU
+		{592904DD-4BF6-4D9A-BAFD-7E2F1755F39D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{592904DD-4BF6-4D9A-BAFD-7E2F1755F39D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{592904DD-4BF6-4D9A-BAFD-7E2F1755F39D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{592904DD-4BF6-4D9A-BAFD-7E2F1755F39D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

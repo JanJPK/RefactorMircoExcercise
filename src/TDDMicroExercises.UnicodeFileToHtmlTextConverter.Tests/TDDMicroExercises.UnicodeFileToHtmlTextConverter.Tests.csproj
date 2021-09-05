@@ -14,7 +14,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\TDDMicroExercises.csproj" />
+    <ProjectReference Include="..\TDDMicroExercises.UnicodeFileToHtmlTextConverter\TDDMicroExercises.UnicodeFileToHtmlTextConverter.csproj" />
   </ItemGroup>
 
   <ItemGroup>

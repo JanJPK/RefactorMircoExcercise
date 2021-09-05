@@ -15,7 +15,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\TDDMicroExercises.csproj" />
+    <ProjectReference Include="..\TDDMicroExercises.TurnTicketDispenser\TDDMicroExercises.TurnTicketDispenser.csproj" />
   </ItemGroup>
 
 </Project>
