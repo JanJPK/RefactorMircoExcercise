@@ -42,10 +42,12 @@
     <Reference Include="Microsoft.CSharp" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="TelemetrySystem\Consts.cs" />
+    <Compile Include="TelemetrySystem\ITelemetryClient.cs" />
     <Compile Include="TelemetrySystem\TelemetryClient.cs" />
-    <Compile Include="TelemetrySystem.Tests\TelemetryDiagnosticControlsTest.cs" />
     <Compile Include="TelemetrySystem\TelemetryDiagnosticControls.cs" />
     <Compile Include="TirePressureMonitoringSystem\Alarm.cs" />
+    <Compile Include="TirePressureMonitoringSystem\ISensor.cs" />
     <Compile Include="TirePressureMonitoringSystem\Sensor.cs" />
     <Compile Include="TurnTicketDispenser\TicketDispenser.cs" />
     <Compile Include="TurnTicketDispenser\TurnNumberSequence.cs" />
@@ -67,18 +69,13 @@
     <Compile Include="TelemetrySystem.SomeDependencies\TelemetryDiagnosticControlsClient2.cs" />
     <Compile Include="TelemetrySystem.SomeDependencies\TelemetryDiagnosticControlsClient3.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="TirePressureMonitoringSystem.SomeDependencies\" />
-    <Folder Include="UnicodeFileToHtmlTextConverter.SomeDependencies\" />
-    <Folder Include="TurnTicketDispenser.SomeDependencies\" />
-    <Folder Include="TelemetrySystem.SomeDependencies\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="lib\nunit.framework.dll" />
     <None Include="lib\nunit.framework.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
-  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
   </Target>

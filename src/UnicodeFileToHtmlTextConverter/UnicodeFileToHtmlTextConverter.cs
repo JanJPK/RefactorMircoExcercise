@@ -1,12 +1,13 @@
 using System.IO;
+using System.Text;
 using System.Web;
 
 namespace TDDMicroExercises.UnicodeFileToHtmlTextConverter
 {
     public class UnicodeFileToHtmlTextConverter
     {
+        private const string HtmlLineBreak = "<br />";
         private readonly string _fullFilenameWithPath;
-
 
         public UnicodeFileToHtmlTextConverter(string fullFilenameWithPath)
         {
@@ -15,19 +16,19 @@ namespace TDDMicroExercises.UnicodeFileToHtmlTextConverter
 
         public string ConvertToHtml()
         {
-            using (TextReader unicodeFileStream = File.OpenText(_fullFilenameWithPath))
+            using (var unicodeFileStream = File.OpenText(_fullFilenameWithPath))
             {
-                string html = string.Empty;
+                var sb = new StringBuilder();
 
-                string line = unicodeFileStream.ReadLine();
+                var line = unicodeFileStream.ReadLine();
                 while (line != null)
                 {
-                    html += HttpUtility.HtmlEncode(line);
-                    html += "<br />";
+                    sb.Append(HttpUtility.HtmlEncode(line));
+                    sb.Append(HtmlLineBreak);
                     line = unicodeFileStream.ReadLine();
                 }
 
-                return html;
+                return sb.ToString();
             }
         }
     }

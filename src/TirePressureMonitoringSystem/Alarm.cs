@@ -1,28 +1,49 @@
+using System;
+
 namespace TDDMicroExercises.TirePressureMonitoringSystem
 {
     public class Alarm
     {
-        private const double LowPressureThreshold = 17;
-        private const double HighPressureThreshold = 21;
+        private const double DefaultLowPressureThreshold = 17;
+        private const double DefaultHighPressureThreshold = 21;
+        private readonly double _lowPressureThreshold;
+        private readonly double _highPressureThreshold;
+        private readonly ISensor _sensor;
 
-        readonly Sensor _sensor = new Sensor();
+        public Alarm() : this(new Sensor())
+        { }
 
-        bool _alarmOn = false;
+        public Alarm(
+            ISensor sensor,
+            double lowPressureThreshold = DefaultLowPressureThreshold,
+            double highPressureThreshold = DefaultHighPressureThreshold)
+        {
+            if (lowPressureThreshold > highPressureThreshold)
+            {
+                throw new ArgumentException($"Invalid parameters: {nameof(lowPressureThreshold)} cannot be higher than {nameof(highPressureThreshold)}");
+            }
+
+            if (lowPressureThreshold < 0 || highPressureThreshold < 0)
+            {
+                throw new ArgumentException($"Invalid parameters: {nameof(lowPressureThreshold)} and {nameof(highPressureThreshold)} must be non-negative");
+            }
+
+            _sensor = sensor;
+            _lowPressureThreshold = lowPressureThreshold;
+            _highPressureThreshold = highPressureThreshold;
+        }
 
         public void Check()
         {
             double psiPressureValue = _sensor.PopNextPressurePsiValue();
 
-            if (psiPressureValue < LowPressureThreshold || HighPressureThreshold < psiPressureValue)
+            if (psiPressureValue < _lowPressureThreshold || _highPressureThreshold < psiPressureValue)
             {
-                _alarmOn = true;
+                AlarmOn = true;
             }
         }
 
-        public bool AlarmOn
-        {
-            get { return _alarmOn; }
-        }
+        public bool AlarmOn { get; private set; }
 
     }
 }
