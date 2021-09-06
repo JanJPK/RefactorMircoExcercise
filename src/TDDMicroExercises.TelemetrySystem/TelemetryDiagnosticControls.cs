@@ -20,9 +20,16 @@ namespace TDDMicroExercises.TelemetrySystem
         public void CheckTransmission()
         {
             DiagnosticInfo = string.Empty;
-
             _telemetryClient.Disconnect();
 
+            ConnectToTelemetryClient();
+
+            _telemetryClient.Send(Consts.TelemetryClientDiagnosticMessage);
+            DiagnosticInfo = _telemetryClient.Receive();
+        }
+
+        private void ConnectToTelemetryClient()
+        {
             var retryLeft = CheckTransmissionRetryCount;
             while (_telemetryClient.OnlineStatus == false && retryLeft > 0)
             {
@@ -34,9 +41,6 @@ namespace TDDMicroExercises.TelemetrySystem
             {
                 throw new Exception(Consts.Errors.ConnectionError);
             }
-
-            _telemetryClient.Send(Consts.TelemetryClientDiagnosticMessage);
-            DiagnosticInfo = _telemetryClient.Receive();
         }
     }
 }
