@@ -58,5 +58,23 @@ namespace TDDMicroExercises.TirePressureMonitoringSystem.Tests
             target.Check();
             Assert.AreEqual(true, target.AlarmOn);
         }
+
+        [Test]
+        public void Reset_Cancels_Alarm()
+        {
+            var sensorMock = new Mock<ISensor>();
+            sensorMock.SetupSequence(m => m.PopNextPressurePsiValue()).Returns(20).Returns(22).Returns(20);
+            var target = new Alarm(sensorMock.Object);
+
+            target.Check();
+            Assert.AreEqual(false, target.AlarmOn);
+
+            target.Check();
+            Assert.AreEqual(true, target.AlarmOn);
+            target.Reset();
+
+            target.Check();
+            Assert.AreEqual(false, target.AlarmOn);
+        }
     }
 }

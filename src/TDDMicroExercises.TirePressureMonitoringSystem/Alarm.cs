@@ -18,14 +18,14 @@ namespace TDDMicroExercises.TirePressureMonitoringSystem
             double lowPressureThreshold = DefaultLowPressureThreshold,
             double highPressureThreshold = DefaultHighPressureThreshold)
         {
-            if (lowPressureThreshold > highPressureThreshold)
-            {
-                throw new ArgumentException($"Invalid parameters: {nameof(lowPressureThreshold)} cannot be higher than {nameof(highPressureThreshold)}");
-            }
-
             if (lowPressureThreshold < 0 || highPressureThreshold < 0)
             {
                 throw new ArgumentException($"Invalid parameters: {nameof(lowPressureThreshold)} and {nameof(highPressureThreshold)} must be non-negative");
+            }
+
+            if (lowPressureThreshold > highPressureThreshold)
+            {
+                throw new ArgumentException($"Invalid parameters: {nameof(lowPressureThreshold)} cannot be higher than {nameof(highPressureThreshold)}");
             }
 
             _sensor = sensor;
@@ -41,6 +41,11 @@ namespace TDDMicroExercises.TirePressureMonitoringSystem
             {
                 AlarmOn = true;
             }
+        }
+
+        public void Reset()
+        {
+            AlarmOn = false;
         }
 
         public bool AlarmOn { get; private set; }
